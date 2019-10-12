@@ -13,12 +13,6 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ card.title }}</h5>
                     <p class="card-text">{{ card.description }}</p>
-                    {% if card.title == 'Wordsearch' %}
-                        <a href="{% url 'children'  %}"
-                        class="btn btn-primary">
-                            Play Wordsearch
-                        </a>
-                    {% endif %}
                 </div>
             </div>
         </div>
