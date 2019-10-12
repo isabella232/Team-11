@@ -15,5 +15,19 @@ def children_detail(request):
     }
     return render(request, 'children.html', context)
 
+def job_detail(request):
+    card = Card.objects.all()
+    context = {
+        'job_cards': card
+    }
+    return render(request, 'job.html', context)
+
+def school_detail(request):
+    card = Card.objects.all()
+    context = {
+        'school_cards': card
+    }
+    return render(request, 'school.html', context)
+
 
 # Create your views here.
