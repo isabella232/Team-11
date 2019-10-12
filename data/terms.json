@@ -1,27 +1,18 @@
 {
 	"budgeting": [{
-		"4": [{
-				"budget": "budget def"
-			},
-			{
-				"income": "income def"
-			},
-			{
-				"expenses": "expenses def"
-			},
-			{
+		"4": {
+				"budget": "budget def",
+				"income": "income def",
+				"expenses": "expenses def",
 				"balance": "balance def"
-			}
-		],
-		"13": [{
-				"over budget": "over budget def"
 			},
-			{
+
+		"13": {
+				"over budget": "over budget def",
 				"under budget": "under budget def"
-			}
-		],
-		"36": [],
-		"66": []
+			},
+		"36": {},
+		"66": {}
 	}]
 
 }
