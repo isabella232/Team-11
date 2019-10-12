@@ -16,7 +16,7 @@ class Engine(object):
 		current_scene = self.scene_map.opening_scene()
 		next_scene_name = ''
 		checkpoint = current_scene
-		n_moves = 0
+		n_moves = 3
 		while (next_scene_name != 'finished' and self.lives > 0):
 			print ("\n*******************************************************************") #raise ValueError ('todo')
 			next_scene_name = current_scene.enter()

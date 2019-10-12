@@ -8,12 +8,6 @@ class Map(object):
 	scenes = {'starting_out' : S.StartingOut(),
 				'savings' : S.Savings(),
 				'loan' : S.Loan(),
-				'debt' : S.Debt(),
-                'food_problems' : S.FoodProblems(),
-                'com_problems' : S.ComProblems(),
-                'climbing_problems' : S.ClimbingProblems(),
-                'finished' : S.Finale(),
-				'death' : Death()
 				}
 	
 	# initializes to a starting scene
