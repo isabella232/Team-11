@@ -21,3 +21,9 @@ def get_word_list(category, min_age):
             if min_age >= 66:
                 words += list(age_group["66"])
         return words
+
+def play_word_search(category, min_age):
+    """
+    Creates the word search
+    """
+    wordsearch.displayWordsearch(25, get_word_list(category, min_age))
