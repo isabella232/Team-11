@@ -8,7 +8,7 @@ def randomFill(wordsearch, size):
       if wordsearch[row][col]=="-":
         randomLetter = random.choice(LETTERS)
         wordsearch[row][col]=randomLetter
-        
+
 #Create an empty size by size wordsearch (list of lists)
 def createWordsearch(size):
   wordsearch = []
@@ -18,11 +18,11 @@ def createWordsearch(size):
       wordsearch[row].append("-")
   return wordsearch
 
-#A subroutine to output the wordsearch on screen    
+#A subroutine to output the wordsearch on screen
 def displayWordsearch(size, wordlist):
   wordsearch = createWordsearch(size)
   for word in wordlist:
-    word = word.upper()
+    word = "".join(word.upper().split(" "))
     addWord(word, wordsearch, size)
   randomFill(wordsearch, size)
   top_bottom_border = '_'
@@ -43,8 +43,3 @@ def addWord(word, wordsearch, size):
   col=0
   for i in range(0,len(word)):
     wordsearch[row][col+i]=word[i]
-
-words =['python', 'algorithm', 'coding', 'program']
-#Display the fully competed wordseach on screen
-displayWordsearch(15, words)
-
