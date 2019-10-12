@@ -6,14 +6,28 @@ def card_index(request):
     context = {
         'cards': cards
     }
-    return render(request, 'index_html', context)
+    return render(request, 'index.html', context)
 
-def card_detail(request):
-    card = Card.objects
+def children_detail(request):
+    card = Card.objects.all()
     context = {
-        'card': card
+        'children_cards': card
     }
     return render(request, 'children.html', context)
+
+def job_detail(request):
+    card = Card.objects.all()
+    context = {
+        'job_cards': card
+    }
+    return render(request, 'job.html', context)
+
+def school_detail(request):
+    card = Card.objects.all()
+    context = {
+        'school_cards': card
+    }
+    return render(request, 'school.html', context)
 
 
 # Create your views here.

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+<h1>Age 4 - 12</h1>
+<h3>Health: 100</h3>
+<h3>Money: $1000</h3>
+<div class="row">
+{% for card in job_cards %}
+    {% if card.title in 'Wordsearch' %}
+        <div class="col-md-4">
+            <div class="card mb-2">
+                <img class="card-img-top" src="{% static card.image %}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ card.title }}</h5>
+                    <p class="card-text">{{ card.description }}</p>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endfor %}
+</div>
+{% endblock %}
