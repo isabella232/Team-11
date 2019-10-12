@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+<h1>Getting Started</h1>
+<div class="row">
+{% for card in cards %}
+    {% if card.name in []}
+        <div class="col-md-4">
+            <div class="card mb-2">
+                <img class="card-img-top" src="{% static card.image %}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ card.title }}</h5>
+                    <p class="card-text">{{ card.description }}</p>
+                    {% if card.name == %}
+                        <a href="{% url 'children' %}"
+                        class="btn btn-primary">
+                            Learn More
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endfor %}
+</div>
+{% endblock %}
