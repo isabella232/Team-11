@@ -8,8 +8,13 @@ On ficy.org, you can find different resources catered to different age groups an
 
 
 Team Members:
+
 Jose Reyes
+
 Nathaniel Martinez
+
 Melissa Tovar
+
 Marco Anaya
+
 Sebastian Villegas
