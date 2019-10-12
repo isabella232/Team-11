@@ -6,12 +6,12 @@ def card_index(request):
     context = {
         'cards': cards
     }
-    return render(request, 'index_html', context)
+    return render(request, 'index.html', context)
 
-def card_detail(request):
-    card = Card.objects
+def children_detail(request):
+    card = Card.objects.all()
     context = {
-        'card': card
+        'children_cards': card
     }
     return render(request, 'children.html', context)
 
